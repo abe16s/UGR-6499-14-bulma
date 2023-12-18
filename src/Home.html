@@ -3,129 +3,158 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <title>Portfolio Home</title>
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="Home.html" class="current">Home</a></li>
-                    <li><a href="Resume.html">Resume</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                </ul>
-                <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="logo"></a>  
-                <ul >
-                    <li><a href="Adventure.html">Adventure</a></li>
-                    <li><a href="Entertainments.html">Entertainments</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
+            <nav class="navbar has-background-dark has-text-light px-3 py-1" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <figure class="image is-64x64 navbar-brand is-hidden-desktop">
+                        <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="is-rounded"></a> 
+                    </figure>
+                    <a role="button" class="navbar-burger has-text-light" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu is-justify-content-space-evenly is-flex-desktop mt-0 ml-0 mr-0 mb-0 has-background-dark">
+                    <div class="navbar-start has-text-centered mr-0 column is-flex-desktop mt-0 ml-0 mb-0 is-justify-content-space-evenly py-0">
+                        <a class="navbar-item has-text-light is-active is-tab" href="Home.html">Home</a>
+                        <a class="navbar-item has-text-light" href="Resume.html">Resume</a>
+                        <a class="navbar-item has-text-light" href="Projects.html">Projects</a>
+                    </div>
+                    <figure class="image is-64x64 navbar-brand is-hidden-touch">
+                        <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="is-rounded"></a> 
+                    </figure>
+                    <div class="navbar-end has-text-centered ml-0 column is-flex-desktop mt-0 mr-0 mb-0 is-justify-content-space-evenly py-0">
+                        <a class="navbar-item has-text-light" href="Adventure.html">Adventure</a>
+                        <a class="navbar-item has-text-light" href="Entertainments.html">Entertainments</a>
+                        <a class="navbar-item has-text-light" href="Contact.html">Contact</a>
+                    </div>
+                </div>
+                <script src="js/navbar.js"></script>
             </nav>       
         </header>
         <hr>
         <main>
-            <section id="about">
-                <hgroup>
-                    <h1>Hey, I am Abenezer Seifu</h1>
-                    <p>I am currently a 3<sup>rd</sup> year Software Engineering student at Addis Ababa University. Focusing on learning and striving to cope up with the fast growing tech sector.</p>
-                </hgroup>
-                <img src="images/Profile_pic_of_Abenezer.png" alt="Photo of Abenezer" id="profile_pic">
-            </section>
-            <section id="others">
-                <h2>Related pages</h2>
-                <div class="other_pages">
-                    <a href="Resume.html"><img src="images/Resume.png" alt="Resume Page"></a>
-                    <h4>Resume</h4>
-                    <p>If you want to know more about me you can check my Resume here.</p>
-                </div>
-                <div class="other_pages">
-                    <a href="Projects.html"><img src="images/Tribute_Page.png" alt="Projects Page"></a>
-                    <h4>Projects</h4>
-                    <P>You can see all the personal projects that I have done previously. Through my time as learning and as an individual hobby.</P>
-                </div>
-                <div class="other_pages">
-                    <a href="Adventure.html"><img src="images/Meskel_IMG_26.JPG" alt="Adventure Page"></a>
-                    <h4>Adventure</h4>
-                    <p>I go to Gurage Zone every year for celebration of Meskel. And I always have a great time there with all my family. You can enjoy my photo gallery of my time there.</p>
-                </div>
-                <div class="other_pages">
-                    <a href="Entertainments.html"><img src="images/OneRepublic.jpg" alt="Entertainments Page"></a>
-                    <h4>Entertainments</h4>
-                    <p>I spend most of my free time listening to Music, Watching Football and different entertaining activities. You can check about all my entertainment alternatives that I enjoy the most.</p>
+            <section class="hero has-background-dark has-text-light is-size-6-mobile is-size-5-tablet is-size-4-desktop is-clipped">
+                <div class="hero-body columns is-align-items-stretch py-0 is-mobile">
+                    <hgroup class="column is-4-desktop is-5-mobile is-offset-1-desktop is-flex is-flex-direction-column is-justify-content-center">
+                        <h1 class="title is-2 is-size-5-mobile is-size-4-tablet has-text-light">Hello World, <br>I am Abenezer Seifu</h1>
+                        <p class="is-size-6-mobile is-size-5-tablet is-size-5-desktop">A 3<sup>rd</sup> year Software Engineering student at Addis Ababa University. Focusing on learning and striving to cope up with the fast growing tech sector.</p>
+                    </hgroup>
+                    <img style="object-fit: cover;" src="images/Profile_pic_of_Abenezer.png" alt="Photo of Abenezer" class="column is-offset-1 is-7">
                 </div>
             </section>
-            <article class="quote_container">
-                <h2>Quotes</h2>
-                <div class="slider_wrapper">
-                    <div class="slider">
-                        <div class="container">
-                            <blockquote id="quote_1">
-                                "Whether you think you can or you think you can't, you're right." 
-                                - Henry Ford
-                            </blockquote>
-                        </div>
-                        <div class="container">
-                            <blockquote id="quote_2">
-                                "The most important thing is to enjoy your life - to be happy - it's all that matters." 
-                                - Steve Jobs
-                            </blockquote>
-                        </div>
-                        <div class="container">
-                            <blockquote id="quote_3">
-                                "The greatest glory in living lies not in never falling, but in rising every time we fall." 
-                                - Nelson Mandela
-                            </blockquote>
-                        </div>
-                        <div class="container">
-                            <blockquote id="quote_4">
-                                "Nothing is impossible, the word itself says 'I'm possible'!"
-                                - Audrey Hepburn
-                            </blockquote>
-                        </div>
-                        <div class="container">
-                            <blockquote id="quote_5">
-                                "Life is like riding a bicycle. To keep your balance you must keep moving."
-                                - Albert Einstein
-                            </blockquote>
-                        </div>
-                        <div class="container">
-                            <blockquote id="quote_6">
-                                "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present."
-                                - Bill Keane 
-                            </blockquote>
-                        </div>
+            <section class="section px-10">
+                <h2 class="title">Related pages</h2>
+                <a href="Resume.html"><div class="columns notification has-background-dark has-text-light mt-5 is-align-items-center">
+                    <img src="images/Resume.png" alt="Resume Page" class="column is-4 is-offset-1">
+                    <hgroup class="column">
+                        <h4 class="title is-5">Resume</h4>
+                        <p>If you want to know more about me you can check my Resume here.</p>
+                    </hgroup>
+                </div></a>
+                <hr>
+                <a href="Projects.html"><div class="columns notification has-background-dark has-text-light mt-5 is-align-items-center">
+                    <img src="images/Tribute_Page.png" alt="Projects Page" class="column is-4 is-offset-1">
+                    <hgroup class="column">
+                    <h4 class="title is-5">Projects</h4>
+                        <P>You can see all the personal projects that I have done previously. Through my time as learning and as an individual hobby.</P>
+                    </hgroup>
+                </div></a>
+                <hr>
+                <a href="Adventure.html"><div class="columns notification has-background-dark has-text-light mt-5 is-align-items-center">
+                    <img src="images/Meskel_IMG_26.JPG" alt="Adventure Page" class="column is-4 is-offset-1">
+                    <hgroup class="column">
+                        <h4 class="title is-5">Adventure</h4>
+                        <p>I go to Gurage Zone every year for celebration of Meskel. And I always have a great time there with all my family. You can enjoy my photo gallery of my time there.</p>
+                    </hgroup>
+                </div></a>
+                <hr>
+                <a href="Entertainments.html"><div class="columns notification has-background-dark has-text-light mt-5 is-align-items-center">
+                    <img src="images/OneRepublic.jpg" alt="Entertainments Page" class="column is-4 is-offset-1">
+                    <hgroup class="column">
+                        <h4 class="title is-5">Entertainments</h4>
+                        <p>I spend most of my free time listening to Music, Watching Football and different entertaining activities. You can check about all my entertainment alternatives that I enjoy the most.</p>
+                    </hgroup>
+                </div></a>
+                <hr>
+            </section>             
+            <div class="container">
+                <div class="columns notification has-background-dark has-text-light has-text-centered is-mobile px-2"  style="overflow-x: auto;">
+                    <div class="column is-12">
+                        <blockquote id="quote_1">
+                            "Whether you think you can or you think you can't, you're right." 
+                            <br>- Henry Ford
+                        </blockquote>
+                    </div>
+                    <div class="column is-12">
+                        <blockquote id="quote_2">
+                            "The most important thing is to enjoy your life - to be happy - it's all that matters." 
+                            <br>- Steve Jobs
+                        </blockquote>
+                    </div>
+                    <div class="column is-12">
+                        <blockquote id="quote_3">
+                            "The greatest glory in living lies not in never falling, but in rising every time we fall." 
+                            <br>- Nelson Mandela
+                        </blockquote>
+                    </div>
+                    <div class="column is-12">
+                        <blockquote id="quote_4">
+                            "Nothing is impossible, the word itself says 'I'm possible'!"
+                            <br>- Audrey Hepburn
+                        </blockquote>
+                    </div>
+                    <div class="column is-12">
+                        <blockquote id="quote_5">
+                            "Life is like riding a bicycle. To keep your balance you must keep moving."
+                            <br>- Albert Einstein
+                        </blockquote>
+                    </div>
+                    <div class="column is-12">
+                        <blockquote id="quote_6">
+                            "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present."
+                            <br>- Bill Keane 
+                        </blockquote>
                     </div>
                 </div>
-            </article>
+            </div>
         </main>
-        <footer>
-            <div id="footer">
-                <nav id="sitemap">
-                    <ul class="lists">
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="Resume.html">Resume</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Adventure.html">Adventure</a></li>
-                        <li><a href="Entertainments.html">Entertainments</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+        <footer class="py-5 px-5 mt-6 has-background-dark has-text-light">
+            <div class="columns has-text-centered is-align-items-center">
+                <nav class="navbar column is-6 has-background-dark has-text-light">
+                    <ul>
+                        <li><a class="has-text-light" href="Home.html">Home</a></li>
+                        <li><a class="has-text-light" href="Resume.html">Resume</a></li>
+                        <li><a class="has-text-light" href="Projects.html">Projects</a></li>
+                        <li><a class="has-text-light" href="Adventure.html">Adventure</a></li>
+                        <li><a class="has-text-light" href="Entertainments.html">Entertainments</a></li>
+                        <li><a class="has-text-light" href="Contact.html">Contact</a></li>
                     </ul>
                 </nav>
-                <address id="socials">
-                    <p>How do you prefer to take coffee?</p>
-                    <ul class="lists">
-                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank">Facebook</a></li>
-                        <li><a href="https://t.me/Abe16s" target="_blank">Telegram</a></li>
-                        <li><a href="https://www.instagram.com/abe16s/" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:abenezerseifu123@gmail.com">Send a mail: abenezerseifu123@gmail.com</a></li>
-                        <li><a href="tel:0936120470" target="_blank">Call: +251936120470</a></li>
+                <address class="column is-6 ">
+                    <p class="subtitle has-text-light is-6">How do you prefer to take coffee?</p>
+                    <ul>
+                        <li><a class="has-text-light" href="https://www.facebook.com/abenezer.seifu" target="_blank">Facebook</a></li>
+                        <li><a class="has-text-light" href="https://t.me/Abe16s" target="_blank">Telegram</a></li>
+                        <li><a class="has-text-light" href="https://www.instagram.com/abe16s/" target="_blank">Instagram</a></li>
+                        <li><a class="has-text-light" href="https://twitter.com/AbenezerSeifu5" target="_blank">Twitter</a></li>
+                        <li><a class="has-text-light" href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank">LinkedIn</a></li>
+                        <li><a class="has-text-light" href="mailto:abenezerseifu123@gmail.com">Send a mail: abenezerseifu123@gmail.com</a></li>
+                        <li><a class="has-text-light" href="tel:0936120470" target="_blank">Call: +251936120470</a></li>
                     </ul>
                 </address>
             </div>
             <hr>
-            <div id="copyright">
-                <img src="images/AB_Logo.jpg" alt="AB Logo" class="logo">
-                <p>Copyright ©2023 All rights reserved | Abenezer Seifu </p>
+            <div class="columns is-align-items-center is-mobile">
+                <figure class="image is-32x32 py-0 px-0">
+                    <img src="images/AB_Logo.jpg" alt="AB Logo" class="is-rounded">
+                </figure>
+                <p class="column">Copyright ©2023 All rights reserved | Abenezer Seifu </p>
             </div>
         </footer>
     </body>
